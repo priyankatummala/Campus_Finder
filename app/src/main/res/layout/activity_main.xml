@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:id="@+id/activity_map"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.example.priyankatummala.sjsumap.MainActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/campusmap"
+        android:id="@+id/mapimage"
+        android:adjustViewBounds="true"
+        />
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="#FF0000">
+    </ListView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Location"
+        android:id="@+id/btnshowlocation"
+        android:onClick="showlocation"
+        android:layout_gravity="bottom|center"/>
+</FrameLayout>
